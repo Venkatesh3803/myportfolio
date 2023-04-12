@@ -2,8 +2,10 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
+    scroll-snap-type:y mandatory;
+    scroll-behavior: smooth;
 }
+
 
 
 /* navber starts here */
@@ -144,6 +146,7 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .yellow {
@@ -238,12 +241,13 @@ h1 {
     color: rgb(254, 171, 185);
     bottom: -3rem;
     right: 12rem;
+    z-index: 5;
 }
 
 /* about me starts here */
 
 #aboutme {
-    height: 90vh;
+    height: 100vh;
     background-color: rgb(226, 246, 249);
     text-align: center;
     color: rgb(104, 103, 103);
@@ -400,6 +404,7 @@ h1 {
 
 #projects {
     width: 100%;
+    height: 100vh;
     background-color: rgb(211, 233, 245);
     text-align: center;
     padding: 4rem;
@@ -475,7 +480,7 @@ h1 {
 #contactme {
     height: 60vh;
     width: 100%;
-    background-color: rgb(226, 246, 249);
+    background-color: rgb(247, 245, 247);
     text-align: center;
     color: rgb(104, 103, 103);
     padding: 4rem;
@@ -526,7 +531,8 @@ input {
     font-size: 20px;
     color: black;
 }
-input:focus{
+
+input:focus {
     outline: none;
 }
 
